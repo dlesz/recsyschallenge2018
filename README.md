@@ -10,7 +10,7 @@ The dataset consists of 1 million user generated playlists and comes in .json sl
 ```
 python restructureData.py --input <FOLDERPATH to MPD source>
 ```
-The script trims reads the MPD json source, retains ``` pid, track_uri ``` and saves it to a .tsv file in the working directory.
+The script reads and trim the MPD json source, retaining only ``` pid and track_uri ``` and saves it to a .tsv file to my_data/ directory.
 
 ## 2) Trimming the MPD and loading the challenge-set
 
