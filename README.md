@@ -23,8 +23,15 @@ python data_preprocessing.py --input <FOLDERPATH to challenge-set>
 ## 3) Generating recommendations for the challenge-set
 1. Run the following command:
 ```
-python recSys_recommender.py --input ../my_data/mpd_ch.tsv --output ../results/my_results.csv --model annoy_als --recommend
+python recsys_recommender.py --input ../my_data/mpd_ch.tsv --output ../results/my_results.csv --model annoy_als --recommend
 ```
+
+to use CPU for computing results make sure to set ```use_gpu : False``` as shown below
+```
+params = {'factors': 128, 'iterations': 15, 'dtype': numpy.float32, 'use_gpu': False, 'calculate_training_loss':True, 'use_cg':True, 'use_native':True}
+```
+
+
 saves a csv submission file to results/ directory
 
 ### License
