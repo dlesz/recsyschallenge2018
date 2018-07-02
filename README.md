@@ -25,7 +25,7 @@ python data_preprocessing.py --input <FOLDERPATH to challenge-set>
 ```
 python recSys_recommender.py --input ../my_data/mpd_ch.tsv --output ../results/my_results.csv --model annoy_als --recommend
 ```
-saves a csv to results folder
+saves a csv submission file to results/ directory
 
 ### License
 Usage of the Million Playlist Dataset is subject to these 
