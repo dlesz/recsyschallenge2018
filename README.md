@@ -2,7 +2,17 @@
 
 This repository contains code used to generate results submitted for the [Spotify RecSys Challenge 2018](https://recsys-challenge.spotify.com) by Team2Step (Dennis Leszkowicz)
 
-Python 3.6 is recommended, as the final code has not been tested in Python 2.7 Make sure to install needed dependencies in ```requirements.txt``` by running ```pip install -r pip-requirements.txt```
+Python 3.6 is recommended, as the final code has not been tested in Python 2.7
+
+## Requirements:
+
+Make sure to install needed dependencies in ```requirements.txt``` by running ```pip install -r pip-requirements.txt```
+
+* [`implicit`](https://github.com/benfred/implicit), used for fast Collaborative filtering on the implicit dataset
+* [`annoy`](https://github.com/spotify/annoy) for fast approximate nearest neighbor search
+* [`sciPy`](https://www.scipy.org) used for coo_matrix in implicit Alternating Least Squares
+* [`numpy`](http://www.numpy.org/)
+* [`pandas`](https://pandas.pydata.org)
 
 ### About Million Playlist Dataset (MPD)
 The dataset consists of 1 million user generated playlists and comes in .json slices.
@@ -35,5 +45,5 @@ params = {'factors': 128, 'iterations': 15, 'dtype': numpy.float32, 'use_gpu': F
 saves a csv submission file to results/ directory
 
 ### License
-Usage of the Million Playlist Dataset is subject to these 
+Usage of the Million Playlist Dataset is subject to these
 [license terms](https://recsys-challenge.spotify.com/license)
