@@ -1,6 +1,6 @@
 # recsyschallenge2018
 
-This repository contains code used to generate results submitted for the [Spotify RecSys Challenge 2018](https://recsys-challenge.spotify.com) by Team2Step (Dennis Leszkowicz), placed #74 on the leaderboard for the main track.
+This repository contains code used to generate results submitted for the [Spotify RecSys Challenge 2018](https://recsys-challenge.spotify.com) by Team2Step (Dennis Leszkowicz), placed [#74 on the leaderboard for the main track](https://recsys-challenge.spotify.com/static/final_main_leaderboard.html).
 
 Python 3.6 is recommended, as the final code has not been tested in Python 2.7
 
